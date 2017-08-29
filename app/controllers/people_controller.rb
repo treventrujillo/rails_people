@@ -30,7 +30,6 @@ class PeopleController < ApplicationController
     if @person.save
       redirect_to people_path
     else
-      flash.now[:alert] = 'Error: Enter Valid Information'
       render :new
     end
   end
