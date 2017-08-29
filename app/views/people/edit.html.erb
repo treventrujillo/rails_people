@@ -1,0 +1,25 @@
+<h1>Edit Contact <%= @person.name %></h1>
+<%= link_to 'Back', people_path %>
+<hr />
+<%= form_for @person do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: 'Enter Name' %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age, placeholder: 'Enter Age' %>
+
+  <%= f.label :hair_color %>
+  <%= f.text_field :hair_color, placeholder: 'Enter Hair Color' %>
+
+  <%= f.label :eye_color %>
+  <%= f.text_field :eye_color, placeholder: 'Enter Eye Color' %>
+
+  <%= f.label :gender %>
+  <%= f.text_field :gender, placeholder: 'Enter Gender' %>
+
+  <%= f.label :alive %>
+  <%= f.text_field :gender, placeholder: 'Enter True or False' %>
+
+  <%= f.submit %>
+
+<% end %>
